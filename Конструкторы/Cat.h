@@ -1,15 +1,16 @@
 #include <string>
+using namespace std
 
 class Cat {
 public:
 
     explicit Cat();
 
-    Cat(const std::string& name, int age, double weight, int energyLevel, int health);
+    Cat(const string& name, int age, double weight, int energyLevel, int health);
 
     // Сеттеры и геттеры для полей
     void SetName(const std::string& name);
-    std::string GetName() const;
+    string GetName() const;
 
     void SetAge(int age);
     int GetAge() const;
@@ -30,7 +31,7 @@ public:
     void Rest();
 
 private:
-    std::string name;
+    string name;
     int age;
     double weight;
     int energyLevel;
